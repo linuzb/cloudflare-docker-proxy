@@ -13,13 +13,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.linuzb.cloudns.ch", custom_domain = true },
-  { pattern = "quay.linuzb.cloudns.ch", custom_domain = true },
-  { pattern = "gcr.linuzb.cloudns.ch", custom_domain = true },
-  { pattern = "k8s-gcr.linuzb.cloudns.ch", custom_domain = true },
-  { pattern = "k8s.linuzb.cloudns.ch", custom_domain = true },
-  { pattern = "ghcr.linuzb.cloudns.ch", custom_domain = true },
-  { pattern = "cloudsmith.linuzb.cloudns.ch", custom_domain = true },
+  { pattern = "docker.linuzb.cloudns.be", custom_domain = true },
+  { pattern = "quay.linuzb.cloudns.be", custom_domain = true },
+  { pattern = "gcr.linuzb.cloudns.be", custom_domain = true },
+  { pattern = "k8s-gcr.linuzb.cloudns.be", custom_domain = true },
+  { pattern = "k8s.linuzb.cloudns.be", custom_domain = true },
+  { pattern = "ghcr.linuzb.cloudns.be", custom_domain = true },
+  { pattern = "cloudsmith.linuzb.cloudns.be", custom_domain = true },
 ]
 
 [env.production.vars]
@@ -28,7 +28,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.linuzb.cloudns.ch", custom_domain = true }
+route = { pattern = "docker-staging.linuzb.cloudns.be", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
